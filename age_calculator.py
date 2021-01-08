@@ -16,7 +16,6 @@ while True:
         break
     except Exception as es:
         print("Please enter only numbers ")
-
 age_year = (year * 12) * 30
 age_month = (13 - month) * 30
 age_day = day
@@ -28,34 +27,16 @@ sum_days = age_year + age_month + age_day
 now_sum_days = year_now + day_now + month_now
 
 total_days = now_sum_days - sum_days
-
 print(total_days)
-
-
 
 total_days = total_days / 360
 
 months = total_days-int(total_days)
 months *= 12
 
-
-
-
 days = months* 30
-
-
-
-
 print(f"Your age is : {int(total_days)} Years\nAnd {months} Months\nAnd {int(days)} Days")
 
 
 
-
-
-
-
-
-
-
-
-
+print(f"Your total age is :{total_days}")
